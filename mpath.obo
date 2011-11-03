@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 26:10:2011 15:48
+date: 02:11:2011 22:15
 saved-by: George Gkoutos
 auto-generated-by: OBO-Edit 2.1-beta13
 default-namespace: mouse_pathology.ontology
@@ -2465,6 +2465,7 @@ is_a: MPATH:551 ! sarcoma
 id: MPATH:408
 name: soft tissue fibrosarcoma
 def: "Malignant tumor derived from pluripotential mesenchymal stem cells; fibroblasts, fibrocytes (M-8810/3)." [Pathbase: Pathology Committee]
+synonym: "fibrosarcoma" EXACT []
 is_a: MPATH:404 ! soft tissue tumor
 is_a: MPATH:551 ! sarcoma
 
@@ -4448,6 +4449,7 @@ is_a: MPATH:599 ! developmental process abnormalities
 [Term]
 id: MPATH:670
 name: granulomatous epicarditis
+def: "A mixed inflammatory cell infiltrate, primarily macrophages and some syncitial cells, around the heart attached to the epicardium." [MPATH:Sundberg]
 is_a: MPATH:215 ! granulomatous inflammation
 is_a: MPATH:645 ! epicarditis
 created_by: George Gkoutos
@@ -4697,13 +4699,14 @@ creation_date: 2011-02-19T05:24:55Z
 id: MPATH:701
 name: developmental aspermia
 is_a: MPATH:599 ! developmental process abnormalities
+is_a: MPATH:796 ! aspermia
 created_by: George Gkoutos
 creation_date: 2011-02-19T05:29:50Z
 
 [Term]
 id: MPATH:702
 name: acquired aspermia
-is_a: MPATH:604 ! defective growth and differentiation process
+is_a: MPATH:796 ! aspermia
 created_by: George Gkoutos
 creation_date: 2011-02-19T05:30:40Z
 
@@ -5143,11 +5146,147 @@ created_by: Paul
 creation_date: 2011-10-26T03:47:01Z
 
 [Term]
+id: MPATH:754
+name: splenic hemosiderosis
+def: "Spleen contains foci of macrophages containing yellow brown pigment that is positive for iron using Prussian blue." [MPATH:Sundberg]
+is_a: MPATH:726 ! hemosiderosis
+created_by: Paul
+creation_date: 2011-11-02T03:30:56Z
+
+[Term]
+id: MPATH:755
+name: pulmonary interstitial mineralisation
+def: "Small foci of mineralization within the interstitium between alveoli." [MPATH:Sundberg]
+is_a: MPATH:555 ! mineralisation
+is_a: MPATH:757 ! interstitial mineraliation
+created_by: Paul
+creation_date: 2011-11-02T03:33:11Z
+
+[Term]
+id: MPATH:756
+name: polyarteritis nodosa
+def: "Chronic inflammation in and around small and medium sized arteries, often in more than one location." [MPATH:Sundberg]
+synonym: "Kussmaul disease" RELATED []
+synonym: "Kussmaul-Maier disease" RELATED []
+is_a: MPATH:682 ! arteritis
+created_by: Paul
+creation_date: 2011-11-02T03:41:52Z
+
+[Term]
+id: MPATH:757
+name: interstitial mineraliation
+def: "Foci of mineralization within the interstitium of a tissue." [MPATH:Sundberg]
+is_a: MPATH:555 ! mineralisation
+created_by: Paul
+creation_date: 2011-11-02T03:54:07Z
+
+[Term]
+id: MPATH:758
+name: renal interstitial mineralisation
+def: "Small foci of mineralization within the interstitium between tubules." [MPATH:Sundberg]
+is_a: MPATH:757 ! interstitial mineraliation
+created_by: Paul
+creation_date: 2011-11-02T03:57:16Z
+
+[Term]
+id: MPATH:759
+name: pseudocyesis
+def: "Appearance of clinical and/or subclinical signs and symptoms associated with pregnancy when the animal is not pregnant" [MPATH:Sundberg]
+comment: Virgin females have mammary acini and ducts dilated to various degrees filled with proteinaceous materials suggestive of lactation or involution.
+synonym: "false pregnancy" EXACT []
+xref: XX:<new xref>
+is_a: MPATH:474 ! ectasia
+created_by: Paul
+creation_date: 2011-11-02T04:02:14Z
+
+[Term]
 id: MPATH:76
 name: heterotopia
 def: "Congenital appearance of a body part or tissue or cell type in a region where it is not normally found ( topographical anomaly)." [Pathbase: Pathology Committee]
 synonym: "Ectopia" RELATED [Pathbase: Curation]
 is_a: MPATH:67 ! displacement and deformity
+
+[Term]
+id: MPATH:760
+name: ovarian bursal cyst
+def: "Marked dilatation of the ovarian bursa." [MPATH:Sundberg]
+comment: May compress the ovary
+is_a: MPATH:637 ! bursal cyst
+created_by: Paul
+creation_date: 2011-11-02T04:07:28Z
+
+[Term]
+id: MPATH:761
+name: muscle regeneration
+def: "Linear palisaiding of nuclei within thin pale muscle fibers suggestive of repair." [MPATH:Sundberg]
+is_a: MPATH:607 ! healing and repair structure
+created_by: Paul
+creation_date: 2011-11-02T04:14:39Z
+
+[Term]
+id: MPATH:762
+name: thyroid follicle pleomorphism
+def: "Thyroid gland follicles are filled with colloid but vary greatly in size." [MPATH:Sundberg]
+comment: Suggestive of goiter or other functional abnormality.
+is_a: MPATH:33 ! intracellular and extracellular accumulation
+created_by: Paul
+creation_date: 2011-11-02T04:18:38Z
+
+[Term]
+id: MPATH:763
+name: sialocele
+def: "Salivary gland duct occlusion resulting in massive enlargement forming a large cyst-like structure." [MPATH:Sundberg]
+is_a: MPATH:62 ! cyst
+created_by: Paul
+creation_date: 2011-11-02T04:23:20Z
+
+[Term]
+id: MPATH:764
+name: fracture
+def: "A fracture is the (local) separation of a bone into two, or more, pieces under the action of stress." [MPATH:PNS]
+is_a: MPATH:56 ! developmental or adult structural  defect
+created_by: Paul
+creation_date: 2011-11-02T04:29:57Z
+
+[Term]
+id: MPATH:765
+name: fracture and healing
+def: "Break in bone associated with exostoses." [MPATH:Sundberg]
+is_a: MPATH:764 ! fracture
+created_by: Paul
+creation_date: 2011-11-02T04:34:27Z
+
+[Term]
+id: MPATH:766
+name: intestinal amyloidosis
+def: "The lamina propria is distended with amorphous hyalinized material interpreted to be amyloid protein." [MPATH:Sundberg]
+is_a: MPATH:34 ! amyloid deposition
+created_by: Paul
+creation_date: 2011-11-02T06:59:37Z
+
+[Term]
+id: MPATH:767
+name: Meckel's diverticulum
+def: "A Meckel's diverticulum is a pouch on the wall of the lower part of the intestine that is present at birth." [PMH:0001281 "http://www.ncbi.nlm.nih.gov/pubmedhealth/PMH0001281/"]
+is_a: MPATH:68 ! diverticulum
+created_by: Paul
+creation_date: 2011-11-02T07:05:54Z
+
+[Term]
+id: MPATH:768
+name: septic necrosis
+def: "Necrosis associated with or caused by local bacterial infection." [MPATH:Sundberg]
+is_a: MPATH:4 ! necrosis
+created_by: Paul
+creation_date: 2011-11-02T07:11:40Z
+
+[Term]
+id: MPATH:769
+name: uterine septic necrosis
+def: "Necrosis of the uterine wall  with large bacterial colonies on its surface." [MPATH:Sundberg]
+is_a: MPATH:768 ! septic necrosis
+created_by: Paul
+creation_date: 2011-11-02T07:15:32Z
 
 [Term]
 id: MPATH:77
@@ -5156,10 +5295,174 @@ def: "Stricto sensu: replacement of one body part or tissue by an homologous str
 is_a: MPATH:599 ! developmental process abnormalities
 
 [Term]
+id: MPATH:770
+name: abnormal organ size
+def: "Abnormal organ dimensions or weight" [MPATH:<new dbxref>, MPATH:PNS]
+is_a: MPATH:86 ! organ specific developmental defect
+created_by: Paul
+creation_date: 2011-11-02T07:19:32Z
+
+[Term]
+id: MPATH:771
+name: abnormal organ length
+def: "Abnormality of extent of the normal long axis" [MPATH:<new dbxref>, MPATH:PNS]
+is_a: MPATH:770 ! abnormal organ size
+created_by: Paul
+creation_date: 2011-11-02T07:21:06Z
+
+[Term]
+id: MPATH:772
+name: abnormal organ mass
+def: "Abnormal mass of organ" [MPATH:<new dbxref>, MPATH:PNS]
+is_a: MPATH:770 ! abnormal organ size
+created_by: Paul
+creation_date: 2011-11-02T07:22:00Z
+
+[Term]
+id: MPATH:773
+name: abnormal intestine length
+def: "Abnormal length of the intestine." [MPATH:PNS]
+is_a: MPATH:771 ! abnormal organ length
+created_by: Paul
+creation_date: 2011-11-02T07:22:44Z
+
+[Term]
+id: MPATH:774
+name: focal hepatic coagulative necrosis
+def: "Focal necrosis in the liver often but not always associated with thrombosis." [MPATH:Sundberg]
+is_a: MPATH:7 ! coagulation necrosis
+created_by: Paul
+creation_date: 2011-11-02T07:24:44Z
+
+[Term]
+id: MPATH:775
+name: compression
+def: "Exertion of abnormal force on a structure or structures usually resulting in deformation and damage." [mpath:<new dbxref>, MPATH:PNS]
+is_a: MPATH:15 ! general degenerative process
+created_by: Paul
+creation_date: 2011-11-02T07:27:38Z
+
+[Term]
+id: MPATH:776
+name: spermatocoele
+def: "A spermatocoele is a cyst that contains spermatozoa. ." [MPATH:PNS]
+comment: They occur in the head of the epididymis or less commonly, in the spermatic cord.
+is_a: MPATH:62 ! cyst
+created_by: Paul
+creation_date: 2011-11-02T07:30:33Z
+
+[Term]
+id: MPATH:777
+name: urelithiasis
+def: "Formation of urinary concretions in any part of the kidney." [MPATH:PNS]
+is_a: MPATH:614 ! concretion
+created_by: Paul
+creation_date: 2011-11-02T07:32:55Z
+
+[Term]
+id: MPATH:778
+name: <new term>
+is_a: MPATH:614 ! concretion
+created_by: Paul
+creation_date: 2011-11-02T07:34:59Z
+
+[Term]
+id: MPATH:779
+name: uretolithiasis
+def: "Formation or urinary concretions in the ureter." [MPATH:PNS]
+is_a: MPATH:777 ! urelithiasis
+created_by: Paul
+creation_date: 2011-11-02T07:36:04Z
+
+[Term]
 id: MPATH:78
 name: incomplete closure
 def: "Incomplete closure of a void or lumen due to failure of growth or fusion of bounding walls." [Pathbase: Pathology Committee]
 is_a: MPATH:599 ! developmental process abnormalities
+
+[Term]
+id: MPATH:780
+name: pseudoxanthoma elasticum
+def: "Pseudoxanthoma elasticum is a progressive disorder characterized by accumulated deposits of calcium and other minerals in elastic fibers." [MPATH:PNS]
+is_a: MPATH:36 ! calcium deposition
+created_by: Paul
+creation_date: 2011-11-02T07:38:35Z
+
+[Term]
+id: MPATH:781
+name: encephalomalacia
+def: "Softening of brain tissue, usually caused by vascular insufficiency or degenerative changes." [MPATH:PNS]
+comment: Areas in the brain where the parenchyma is blanched. Cells in this area are pycnotic. This may be the sequela of an infarction.
+synonym: "cerebromalacia" EXACT []
+is_a: MPATH:25 ! tissue specific degenerative process
+created_by: Paul
+creation_date: 2011-11-02T07:43:13Z
+
+[Term]
+id: MPATH:782
+name: phthisis bulbi
+def: "Collapse of the eye globe associated with degenerative changes." [MPATH:Sundberg]
+is_a: MPATH:25 ! tissue specific degenerative process
+created_by: Paul
+creation_date: 2011-11-02T07:51:11Z
+
+[Term]
+id: MPATH:783
+name: B6 dermatitis
+def: "Follicular dystrophy, rupture, foreign body reaction, ulceration, scarring, pseudoepitheliomatous hyperplasia are part of a syndrome commonly called B6 dermatitis in black strains of mice." [MPATH:Sundberg]
+is_a: MPATH:196 ! dermatitis
+created_by: Paul
+creation_date: 2011-11-02T07:55:07Z
+
+[Term]
+id: MPATH:784
+name: follicular atresia
+def: "Degeneration and resorption of an ovarian follicle before it reaches maturity and ruptures." [MPATH:PNS]
+comment: Included here to permit annotation of unusual patterns or atresia; abnormal numbers of atretic follicles or abnoral size or distribution.
+is_a: MPATH:25 ! tissue specific degenerative process
+created_by: Paul
+creation_date: 2011-11-02T07:59:53Z
+
+[Term]
+id: MPATH:785
+name: bone marrow granulopoiesis
+def: "Marked production of granulocytes, primarily neutrophils, usually in response to a major acute inflammatory response." [MPATH:Sundberg]
+is_a: MPATH:188 ! immunopathology
+created_by: Paul
+creation_date: 2011-11-02T08:06:16Z
+
+[Term]
+id: MPATH:786
+name: inspissation
+def: "The drying, thickening  and coagulation of extracellular secretions or fluids." [MPATH:PNS]
+is_a: MPATH:15 ! general degenerative process
+created_by: Paul
+creation_date: 2011-11-02T08:09:33Z
+
+[Term]
+id: MPATH:787
+name: intervertebral disk prolapse ventral
+def: "Ventral prolapse of the intervertebral disk." [MPATH:Sundberg]
+comment: Ventral prolapse is quite rare but found in ageing mice.
+is_a: MPATH:742 ! intervertebral disk prolapse
+created_by: Paul
+creation_date: 2011-11-02T08:37:59Z
+
+[Term]
+id: MPATH:788
+name: testicular torsion
+def: "The testicle twisted around the vascular tract to constrict flow resulting in liquifactive necrosis of the affected testicle." [MPATH:Sundberg]
+is_a: MPATH:562 ! torsion
+created_by: Paul
+creation_date: 2011-11-02T08:43:39Z
+
+[Term]
+id: MPATH:789
+name: trichogranuloma
+def: "Dermal granuloma surrounding hair fibers." [MPATH:Sundberg]
+is_a: MPATH:215 ! granulomatous inflammation
+created_by: Paul
+creation_date: 2011-11-02T08:52:38Z
 
 [Term]
 id: MPATH:79
@@ -5167,6 +5470,64 @@ name: malposition
 def: "Abnormal position or orientation of a structure insufficient to be called a heterotopia." [Pathbase: Curation]
 synonym: "Misplacement" RELATED [Pathbase: Curation]
 is_a: MPATH:76 ! heterotopia
+
+[Term]
+id: MPATH:790
+name: bilateral retinal degeneration
+def: "Retinal degeneration of both eyes." [MPATH:Sundberg]
+is_a: MPATH:737 ! retinal degeneration
+created_by: Paul
+creation_date: 2011-11-02T08:56:45Z
+
+[Term]
+id: MPATH:791
+name: cartilagenous embolism
+def: "Occlusion of a vessel by a piece of dissected cartilage." [MPATH:Sundberg]
+is_a: MPATH:110 ! embolus
+created_by: Paul
+creation_date: 2011-11-02T09:27:08Z
+
+[Term]
+id: MPATH:792
+name: lymph node reticuloendothelial cell hyperplasia
+def: "Proliferation of the reticuloendothelial cells in the medulla of the lymph node." [MPATH:Sundberg]
+is_a: MPATH:602 ! hyperplastic tissue
+created_by: Paul
+creation_date: 2011-11-02T09:32:12Z
+
+[Term]
+id: MPATH:793
+name: reactive splenomegaly
+def: "An increase in the size of the spleen due to ongoing acute or chronic infection." [MPATH:Sundberg]
+is_a: MPATH:188 ! immunopathology
+created_by: Paul
+creation_date: 2011-11-02T09:42:26Z
+
+[Term]
+id: MPATH:794
+name: melena
+def: "Digested blood in the lumen of the stomach or small intestine, indicative of hemorrhage." [MPATH:Sundberg]
+is_a: MPATH:119 ! hemorrhage and non-specified extravasation
+created_by: Paul
+creation_date: 2011-11-02T09:57:01Z
+
+[Term]
+id: MPATH:795
+name: psammoma body
+def: "Round , often laminar, non-proteinaceous eosinophilic bodies representing calcium deposition." [MPATH:Sundberg]
+comment: Psammoma bodies are associated with the papillary (nipple-like) histomorphology and are thought to arise from (1) the infarction and calcification of papillae tips and (2) calcification of intralymphatic tumor thrombi.
+is_a: MPATH:36 ! calcium deposition
+created_by: Paul
+creation_date: 2011-11-02T10:01:09Z
+
+[Term]
+id: MPATH:796
+name: aspermia
+def: "Lack of sperm." [MPATH:Sundberg]
+comment: May be through failure of spermatogenesis, or increased death.
+is_a: MPATH:604 ! defective growth and differentiation process
+created_by: Paul
+creation_date: 2011-11-02T10:10:45Z
 
 [Term]
 id: MPATH:8
