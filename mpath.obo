@@ -1,6 +1,6 @@
 format-version: 1.2
-date: 02:11:2011 22:15
-saved-by: George Gkoutos
+date: 26:11:2011 16:18
+saved-by: Paul
 auto-generated-by: OBO-Edit 2.1-beta13
 default-namespace: mouse_pathology.ontology
 namespace-id-rule: * MPATH:$sequence(3,0,999)$
@@ -85,6 +85,7 @@ is_a: MPATH:105 ! circulatory disorder
 id: MPATH:109
 name: edema
 def: "An accumulation of an excessive amount of watery fluid in cells or intercellular tissues." [Pathbase: Curation]
+synonym: "oedema" EXACT []
 is_a: MPATH:106 ! fluid accumulation
 
 [Term]
@@ -2559,7 +2560,7 @@ is_a: MPATH:33 ! intracellular and extracellular accumulation
 id: MPATH:420
 name: lymphangioma
 def: "Benign hamartomatous malformation of the lymphatic ducts. Usually found in the skin and may be superficial or deep. (M-9170/0)." [ISBN:0781727286]
-synonym: "Cystic hygroma" RELATED [Pathbase: Curation]
+synonym: "Hygroma" BROAD [ISBN:0-19-261976-4]
 is_a: MPATH:419 ! lymphatic vessel tumor
 is_a: MPATH:74 ! hamartoma
 
@@ -4665,6 +4666,7 @@ creation_date: 2011-02-19T05:17:30Z
 [Term]
 id: MPATH:698
 name: exostosis
+synonym: "osteophytes" RELATED []
 is_a: MPATH:126 ! growth and differentiation defect
 created_by: George Gkoutos
 creation_date: 2011-02-19T05:23:34Z
@@ -5077,7 +5079,7 @@ creation_date: 2011-10-26T03:15:56Z
 [Term]
 id: MPATH:746
 name: cartilagenous erosion
-def: "Fragmentation and erosion of articular cartilage." [MPATH\::Sundberg]
+def: "Fragmentation and erosion of articular cartilage." [MPATH:\:Sundberg]
 is_a: MPATH:25 ! tissue specific degenerative process
 created_by: Paul
 creation_date: 2011-10-26T03:18:38Z
@@ -5158,7 +5160,7 @@ id: MPATH:755
 name: pulmonary interstitial mineralisation
 def: "Small foci of mineralization within the interstitium between alveoli." [MPATH:Sundberg]
 is_a: MPATH:555 ! mineralisation
-is_a: MPATH:757 ! interstitial mineraliation
+is_a: MPATH:757 ! interstitial mineralization
 created_by: Paul
 creation_date: 2011-11-02T03:33:11Z
 
@@ -5174,7 +5176,7 @@ creation_date: 2011-11-02T03:41:52Z
 
 [Term]
 id: MPATH:757
-name: interstitial mineraliation
+name: interstitial mineralization
 def: "Foci of mineralization within the interstitium of a tissue." [MPATH:Sundberg]
 is_a: MPATH:555 ! mineralisation
 created_by: Paul
@@ -5184,7 +5186,7 @@ creation_date: 2011-11-02T03:54:07Z
 id: MPATH:758
 name: renal interstitial mineralisation
 def: "Small foci of mineralization within the interstitium between tubules." [MPATH:Sundberg]
-is_a: MPATH:757 ! interstitial mineraliation
+is_a: MPATH:757 ! interstitial mineralization
 created_by: Paul
 creation_date: 2011-11-02T03:57:16Z
 
@@ -5525,9 +5527,34 @@ id: MPATH:796
 name: aspermia
 def: "Lack of sperm." [MPATH:Sundberg]
 comment: May be through failure of spermatogenesis, or increased death.
-is_a: MPATH:604 ! defective growth and differentiation process
+is_a: MPATH:797 ! spermatogenesis defect
 created_by: Paul
 creation_date: 2011-11-02T10:10:45Z
+
+[Term]
+id: MPATH:797
+name: spermatogenesis defect
+def: "Compromise or abnormality of the process of spermatogenesis" [MPATH:PNS]
+is_a: MPATH:604 ! defective growth and differentiation process
+created_by: Paul
+creation_date: 2011-11-02T10:17:11Z
+
+[Term]
+id: MPATH:798
+name: hypospermia
+def: "Reduced numbers of sperm." [MPATH:PNS]
+is_a: MPATH:797 ! spermatogenesis defect
+created_by: Paul
+creation_date: 2011-11-02T10:18:26Z
+
+[Term]
+id: MPATH:799
+name: scoliosis
+def: "Scoliosis is an abnormal curvature of the spine. The spine curves away from the middle or sideways." [MPATH:Sundberg]
+synonym: "" EXACT []
+is_a: MPATH:86 ! organ specific developmental defect
+created_by: Paul
+creation_date: 2011-11-02T10:20:56Z
 
 [Term]
 id: MPATH:8
@@ -5542,10 +5569,106 @@ def: "Occlusion ( partial or complete) of a lumen or space, internally by a spac
 is_a: MPATH:56 ! developmental or adult structural  defect
 
 [Term]
+id: MPATH:800
+name: intervertebral disk prolapse dorsal
+def: "Dorsal prolapse of the intervertebral disk." [MPATH:Sundberg]
+is_a: MPATH:742 ! intervertebral disk prolapse
+created_by: Paul
+creation_date: 2011-11-03T07:08:38Z
+
+[Term]
+id: MPATH:801
+name: intervertebral disks prolapsed dorsally and ventrally
+def: "Presence of dorsal and ventrally prolapsed disks in the same vertebral column." [MPATH:Sundberg]
+is_a: MPATH:742 ! intervertebral disk prolapse
+created_by: Paul
+creation_date: 2011-11-03T07:09:46Z
+
+[Term]
+id: MPATH:802
+name: rectal prolapse
+def: "Eversion through the anus." [MPATH:Sundberg]
+is_a: MPATH:626 ! prolapse
+created_by: Paul
+creation_date: 2011-11-03T07:11:38Z
+
+[Term]
+id: MPATH:803
+name: trabecular bone thickening
+def: "Thickening of trabecular bone." [MPATH:Sundberg]
+comment: Not osteopetrosis.
+is_a: MPATH:126 ! growth and differentiation defect
+created_by: Paul
+creation_date: 2011-11-03T07:41:18Z
+
+[Term]
+id: MPATH:804
+name: cavernous lymphangioma
+def: "Large numbers of thin-walled dilated lymphatic channels situated in the dermis, subcutis or skeletal muscle." [ISBN:0-19-261976-4]
+comment: This is a developmental malformation
+is_a: MPATH:420 ! lymphangioma
+created_by: Paul
+creation_date: 2011-11-25T03:58:53Z
+
+[Term]
+id: MPATH:805
+name: cystic hygroma
+def: "Variant of cavernous lymphangioma (MPATH:804) showing gross dilatation of lymphatic channels." [ISBN:0-19-261976-4]
+synonym: "Cystic lymphangioma." RELATED []
+is_a: MPATH:420 ! lymphangioma
+created_by: Paul
+creation_date: 2011-11-25T04:01:26Z
+
+[Term]
+id: MPATH:806
+name: lymphangioma circumscriptum
+def: "Cutaneous grouped collection of thin-walled translucent vessels, which appear at birth or in early infancy and are commonest around the limb girdles." [ISBN:0-19-261976-4 "Oxford Textbook of Pathology pp 935-6"]
+comment: Generally believed to represent a developmental defect but may be associated with surgery.
+is_a: MPATH:420 ! lymphangioma
+created_by: Paul
+creation_date: 2011-11-25T04:03:31Z
+
+[Term]
+id: MPATH:807
+name: hygroma
+def: "Large cystic subcutaneous spaces usually found in the flexures, especially around the neck." [ISBN:0-19-261976-4 "Oxfrod Textbook of Pathology p 927"]
+comment: Obstruction of the developing lymphatics may contribute to their genesis.
+synonym: "Cystic hygroma" RELATED []
+is_a: MPATH:62 ! cyst
+created_by: Paul
+creation_date: 2011-11-25T04:11:06Z
+
+[Term]
+id: MPATH:808
+name: lymphedema
+def: "Accumulation of interstitial fluid caused by blockage or failure of the lymphatic system." [ISBN:0-19-261976-4 "Oxford Textbook of Pathology p 928"]
+comment: Not be confused with edema arising from venous insufficiency, which is not lymphedema.
+synonym: "Lymphoedema" EXACT []
+is_a: MPATH:109 ! edema
+created_by: Paul
+creation_date: 2011-11-25T04:15:32Z
+
+[Term]
+id: MPATH:809
+name: nuchal edema
+def: "Edema of the posterior aspect of the fetal neck caused by an accumulation of fluid, usually lymph." [MPATH:Pathology committee]
+is_a: MPATH:109 ! edema
+created_by: Paul
+creation_date: 2011-11-25T04:33:15Z
+
+[Term]
 id: MPATH:81
 name: perforation
 def: "Presence of a hole/channel through a normally imperforate structure often a membrane or septum." [Pathbase: Pathology Committee]
 is_a: MPATH:56 ! developmental or adult structural  defect
+
+[Term]
+id: MPATH:810
+name: follicular dystrophy
+def: "Degenerative changes in hair follicles resulting in a deformed hair fiber, sometimes root sheath hyperplasia and follicular rupture." [MPATH:Sundberg]
+is_a: MPATH:554 ! dystrophy
+created_by: Paul
+creation_date: 2011-11-25T05:04:59Z
 
 [Term]
 id: MPATH:82
