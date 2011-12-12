@@ -1,6 +1,6 @@
 format-version: 1.2
-date: 26:11:2011 16:18
-saved-by: Paul
+date: 11:12:2011 11:15
+saved-by: George Gkoutos
 auto-generated-by: OBO-Edit 2.1-beta13
 default-namespace: mouse_pathology.ontology
 namespace-id-rule: * MPATH:$sequence(3,0,999)$
@@ -4878,7 +4878,7 @@ id: MPATH:722
 name: rhabdomyoma
 def: "Benign stromal tumors of the soft tissue with skeletal muscle differentiation." [ICD-O:M-8900/0, PMID:3525381]
 comment: Adult and fetal types.
-is_a: MPATH:551 ! sarcoma
+is_a: MPATH:423 ! myomatous tumor
 created_by: Paul
 creation_date: 2011-06-06T03:59:49Z
 
