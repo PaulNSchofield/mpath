@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 22:03:2012 13:20
+date: 26:03:2012 10:12
 saved-by: gkoutos
 auto-generated-by: OBO-Edit 2.1-beta13
 default-namespace: mouse_pathology.ontology
@@ -619,6 +619,7 @@ created_by: George Gkoutos
 id: MPATH:177
 name: angiogenesis
 def: "Aberrant process of blood vessel formation and the subsequent remodeling process; does not refer to the initial establishment of the vascular network by vasculogenesis." [Pathbase: Curation]
+synonym: "neovascularisation" RELATED []
 is_a: MPATH:176 ! connective tissue replacement
 created_by: George Gkoutos
 
@@ -3021,6 +3022,7 @@ id: MPATH:484
 name: hyperplastic nodule
 def: "Expansion of small hyperplastic lesions to become macroscopically nodules, compressing adjacent cells." [Pathbase: Pathology Committee]
 synonym: "hyperplastic nodules" RELATED [Pathbase: Curation]
+synonym: "nodular hyperplasia" RELATED []
 is_a: MPATH:602 ! hyperplastic tissue
 
 [Term]
@@ -3429,13 +3431,13 @@ is_a: MPATH:530 ! Plasma cell neoplasms
 id: MPATH:533
 name: extraosseous plasmacytoma
 def: "Diffuse proliferation of mature plasma cells. Clonal by definition. Frequently found in IL6 transgenic mice. Characteristically involves spleen and nodes rather than peritoneum." [PMID:12070034]
-is_a: MPATH:530 ! Plasma cell neoplasms
+is_a: MPATH:532 ! plasmacytoma
 
 [Term]
 id: MPATH:534
 name: anaplastic plasmacytoma
 def: "Diffuse proliferation of immature plasma cells or plasma blasts." [PMID:12070034]
-is_a: MPATH:530 ! Plasma cell neoplasms
+is_a: MPATH:532 ! plasmacytoma
 
 [Term]
 id: MPATH:535
@@ -5460,7 +5462,7 @@ creation_date: 2011-11-02T08:43:39Z
 id: MPATH:789
 name: trichogranuloma
 def: "Dermal granuloma surrounding hair fibers." [MPATH:Sundberg]
-is_a: MPATH:215 ! granulomatous inflammation
+is_a: MPATH:847 ! granuloma
 created_by: Paul
 creation_date: 2011-11-02T08:52:38Z
 
@@ -5551,6 +5553,7 @@ name: scoliosis
 def: "Scoliosis is an abnormal curvature of the spine. The spine curves away from the middle or sideways." [MPATH:Sundberg]
 synonym: "" EXACT []
 is_a: MPATH:86 ! organ specific developmental defect
+is_a: MPATH:871 ! spinal structural defects
 created_by: Paul
 creation_date: 2011-11-02T10:20:56Z
 
@@ -5882,16 +5885,141 @@ creation_date: 2012-03-22T08:55:14Z
 [Term]
 id: MPATH:834
 name: ovarian tubulostromal tumor
-def: "non-malignant neoplasia of the ovary." [MPATH:curation]
+def: "non-malignant neoplasia of the ovary." [ISBN:0-944398-45-6 "page  457", MPATH:curation]
+synonym: "tubular adenoma" RELATED []
 is_a: MPATH:556 ! potentially cancerous lesions
 created_by: Paul
 creation_date: 2012-03-22T09:04:54Z
+
+[Term]
+id: MPATH:835
+name: acute septic inflammation
+def: "acute inflammation due to infection." [MPATH:curation]
+is_a: MPATH:213 ! acute inflammation
+created_by: Paul
+creation_date: 2012-03-22T03:38:07Z
+
+[Term]
+id: MPATH:836
+name: dermal fibrosis
+def: "fibrosis in the skin" [MPATH:curation]
+is_a: MPATH:181 ! fibrosis
+created_by: Paul
+creation_date: 2012-03-22T05:06:25Z
+
+[Term]
+id: MPATH:837
+name: hepatic mid-zonal fatty metamorphosis
+def: "Fatty change in the mid-zonal region of the liver." [MPATH:curation]
+is_a: MPATH:622 ! steatosis
+created_by: Paul
+creation_date: 2012-03-22T05:23:46Z
+
+[Term]
+id: MPATH:838
+name: anaplastic carcinoma
+def: "carcinoma with an absence of epithelial structural differentiation." [MPATH:curation]
+is_a: MPATH:549 ! carcinoma
+created_by: Paul
+creation_date: 2012-03-22T05:26:31Z
+
+[Term]
+id: MPATH:839
+name: anaplastic hepatocellular carcinoma
+def: "anaplastic carcinoma of the liver." [MPATH:curation]
+is_a: MPATH:357 ! hepatocellular carcinoma
+is_a: MPATH:838 ! anaplastic carcinoma
+created_by: Paul
+creation_date: 2012-03-22T05:28:22Z
 
 [Term]
 id: MPATH:84
 name: supernumerary structure
 def: "Additional structure whether normally located or not." [Pathbase: Curation]
 is_a: MPATH:56 ! developmental or adult structural  defect
+
+[Term]
+id: MPATH:840
+name: granulomatous arthritis
+def: "arthitis involving extensive macrophage infiltration into the joint." [MPATH:curation]
+is_a: MPATH:195 ! arthritis
+is_a: MPATH:215 ! granulomatous inflammation
+created_by: Paul
+creation_date: 2012-03-22T05:37:23Z
+
+[Term]
+id: MPATH:841
+name: anopthalmia
+def: "Absence of eye." [MPATH:curation]
+comment: may be uni or bilateral
+is_a: MPATH:86 ! organ specific developmental defect
+created_by: Paul
+creation_date: 2012-03-22T05:40:44Z
+
+[Term]
+id: MPATH:842
+name: coccygeal hemivertebrae
+def: "abnormally shaped vertebral body often triangular as opposed to rectangular." [PMID:1666161]
+comment: spontaneous or induced developmental lesion
+is_a: MPATH:67 ! displacement and deformity
+created_by: Paul
+creation_date: 2012-03-22T05:55:21Z
+
+[Term]
+id: MPATH:843
+name: stasis
+def: "Cessation of movement of a body fluid or liquid." [MPATH:curation]
+is_a: MPATH:80 ! obstruction and stenosis
+created_by: Paul
+creation_date: 2012-03-22T06:05:28Z
+
+[Term]
+id: MPATH:844
+name: biliary stasis
+def: "Cessation of the flow of bile due to bile duct blockage or overproduction." [MPATH:curation]
+is_a: MPATH:843 ! stasis
+created_by: Paul
+creation_date: 2012-03-22T06:06:41Z
+
+[Term]
+id: MPATH:845
+name: partial abortion
+def: "Evidence of residual placenta in utero without embryo." [MPATH:curation]
+is_a: MPATH:100 ! placental abnormality
+created_by: Paul
+creation_date: 2012-03-24T03:03:26Z
+
+[Term]
+id: MPATH:846
+name: foreign body acute pododermatitis
+def: "acute inflammation of the footpad caused by foreign body." [MPATH:curation]
+is_a: MPATH:659 ! foreign body dermatitis
+created_by: Paul
+creation_date: 2012-03-24T03:05:46Z
+
+[Term]
+id: MPATH:847
+name: granuloma
+def: "Collection of epithelioid macrophages into a nodule" [MPATH:curation]
+is_a: MPATH:215 ! granulomatous inflammation
+created_by: Paul
+creation_date: 2012-03-24T03:19:38Z
+
+[Term]
+id: MPATH:848
+name: effacing granuloma
+def: "Replacement of normal tissue by granuloma." [MPATH:curation]
+is_a: MPATH:847 ! granuloma
+created_by: Paul
+creation_date: 2012-03-24T03:22:52Z
+
+[Term]
+id: MPATH:849
+name: anaplastic mammary adenocarcinoma
+def: "poorly differentiated adenocarcinoma of the mammary gland" [MPATH:curation]
+is_a: MPATH:268 ! adenocarcinoma
+created_by: Paul
+creation_date: 2012-03-24T03:26:01Z
 
 [Term]
 id: MPATH:85
@@ -5901,16 +6029,212 @@ comment: This term is generally used in the context of embryonic cells or stem c
 is_a: MPATH:599 ! developmental process abnormalities
 
 [Term]
+id: MPATH:850
+name: post-traumatic structural abnormality
+def: "Morphological abnormality following trauma or related insult such as infection." [MPATH:curation]
+is_a: MPATH:56 ! developmental or adult structural  defect
+created_by: Paul
+creation_date: 2012-03-24T03:28:03Z
+
+[Term]
+id: MPATH:851
+name: auricular deformation
+def: "acquired dysmorphology of the external pinna following trauma or infection." [MPATH:curation]
+is_a: MPATH:850 ! post-traumatic structural abnormality
+created_by: Paul
+creation_date: 2012-03-24T03:29:48Z
+
+[Term]
+id: MPATH:852
+name: plasmacytosis
+def: "A condition in which there is an unusually large proportion of plasma cells in tissues, exudates, or blood." [MPAHTH:curation]
+is_a: MPATH:194 ! immune mediated disease
+created_by: Paul
+creation_date: 2012-03-24T03:32:23Z
+
+[Term]
+id: MPATH:853
+name: systemic plasmacytosis
+def: "Abnormality of circulating plasma cells" [MPATH:curation]
+is_a: MPATH:852 ! plasmacytosis
+created_by: Paul
+creation_date: 2012-03-24T03:33:57Z
+
+[Term]
+id: MPATH:854
+name: cutaneous plasmacytosis
+def: "Plasmacytosis in the skin." [MPATH:curation]
+is_a: MPATH:852 ! plasmacytosis
+created_by: Paul
+creation_date: 2012-03-24T03:35:42Z
+
+[Term]
+id: MPATH:855
+name: Splendore-Hoeppli phenomenon
+def: "In vivo formation of intensely eosinophilic material (radiate, star-like, asteroid or club-shaped configurations) around microorganisms (fungi, bacteria and parasites) or biologically inert substances." [PMID:18976399]
+is_a: MPATH:194 ! immune mediated disease
+created_by: Paul
+creation_date: 2012-03-24T03:38:37Z
+
+[Term]
+id: MPATH:856
+name: bullous emphysema
+def: "Rupture of alveolar walls result in large rounded open air spaces in the lung" [MPATH:curation]
+is_a: MPATH:31 ! emphysema
+created_by: Paul
+creation_date: 2012-03-24T03:43:52Z
+
+[Term]
+id: MPATH:857
+name: multifocal bullous emphysema
+def: "mutilocular bullous emphysema" [MPATH:curation]
+is_a: MPATH:856 ! bullous emphysema
+created_by: Paul
+creation_date: 2012-03-24T03:45:01Z
+
+[Term]
+id: MPATH:858
+name: capillary hemangioma
+def: "Benign proliferation of capillaries made up of closely packed aggregations of capillaries, usually of normal caliber, separated by scant connective stroma" [MPATH:curation]
+comment: Most common kind of hemangioma thought to be derived from primitive mesenchymal stem cells.
+is_a: MPATH:240 ! hemangioma
+created_by: Paul
+creation_date: 2012-03-24T03:46:38Z
+
+[Term]
+id: MPATH:859
+name: botryomycosis
+def: "Chronic granulomatous bacterial infection that affects the skin, and sometimes the viscera. Usually caused by S. aureus." [ISBN: 0-7216-2921-0.]
+is_a: MPATH:627 ! pyogranulomatous inflammation
+created_by: Paul
+creation_date: 2012-03-24T03:52:35Z
+
+[Term]
 id: MPATH:86
 name: organ specific developmental defect
 def: "Developmental defect characteristic of a particular organ or organ system which may be a recognised syndrome or a complex defect showing multiple manifestations." [Pathbase: Curation]
 is_a: MPATH:55 ! developmental and structural abnormality
 
 [Term]
+id: MPATH:860
+name: cholecystitis
+def: "inflammation of the gall bladder" [MPATH:curation]
+is_a: MPATH:212 ! inflammation
+created_by: Paul
+creation_date: 2012-03-24T04:11:00Z
+
+[Term]
+id: MPATH:861
+name: edematous cholecystitis
+def: "cholecystitis associated with edema" [MPATH:curation]
+is_a: MPATH:860 ! cholecystitis
+created_by: Paul
+creation_date: 2012-03-24T04:11:43Z
+
+[Term]
+id: MPATH:862
+name: flatus
+def: "Accumulation or trapping of air" [MPATH:curation]
+is_a: MPATH:33 ! intracellular and extracellular accumulation
+created_by: Paul
+creation_date: 2012-03-24T04:17:10Z
+
+[Term]
+id: MPATH:863
+name: focal ulcerative dermatitis
+def: "circumscribed ulceration of the skin penetrating the basement membrane as part of  inflammation process." [MPATH:curation]
+is_a: MPATH:196 ! dermatitis
+created_by: Paul
+creation_date: 2012-03-24T04:18:54Z
+
+[Term]
+id: MPATH:864
+name: otitis externa
+def: "Inflammation of the outer ear." [MPATH:curation]
+is_a: MPATH:212 ! inflammation
+created_by: Paul
+creation_date: 2012-03-25T10:00:59Z
+
+[Term]
+id: MPATH:865
+name: foreign body acute papillomatous glossitis
+def: "Papillomatous inflammation of the tongue caused by a foreign body." [MPATH:curationf>]
+is_a: MPATH:662 ! foreign body glossitis
+created_by: Paul
+creation_date: 2012-03-25T10:49:17Z
+
+[Term]
+id: MPATH:866
+name: gastric adenomatous hyperplasia
+def: "Thickening of the glandular epithelium" [MPATH:curation]
+comment: Often with crystalloid formation
+is_a: MPATH:138 ! epithelial hyperplasia
+created_by: Paul
+creation_date: 2012-03-25T10:59:20Z
+
+[Term]
+id: MPATH:867
+name: hepatic central vein perivascular fibrosis
+def: "Major hepatic vein surrounded by fibrous connective tissue." [MPATH:curation]
+is_a: MPATH:181 ! fibrosis
+created_by: Paul
+creation_date: 2012-03-25T11:02:20Z
+
+[Term]
+id: MPATH:868
+name: uterine ectasia
+def: "Dilation of the uterus" [MPATH:curation]
+comment: Usually assciated iwth hydrpometra
+synonym: "hydrometra" RELATED []
+is_a: MPATH:474 ! ectasia
+created_by: Paul
+creation_date: 2012-03-25T11:58:56Z
+
+[Term]
+id: MPATH:869
+name: intussception
+def: "Condition in which a part of the intestine has invaginated into another section of intestine," [MPATH:curation]
+is_a: MPATH:56 ! developmental or adult structural  defect
+created_by: Paul
+creation_date: 2012-03-25T12:04:33Z
+
+[Term]
 id: MPATH:87
 name: germ cell defect
 def: "Abnormal morphology, differentiation or location of primordial germ cells or their descendents. Not neoplastic." [Pathbase: Curation]
 is_a: MPATH:86 ! organ specific developmental defect
+
+[Term]
+id: MPATH:870
+name: junctional epidermolysis bullosa
+def: "severe type of the disorder generally apparent at birth.Junctional epidermolysis bullosa involves defects in hemidesmosomes. t" [MPATH:curation]
+is_a: MPATH:813 ! epidermolysis bullosa lesions
+created_by: Paul
+creation_date: 2012-03-25T12:10:57Z
+
+[Term]
+id: MPATH:871
+name: spinal structural defects
+def: "Structural defects of the bony and muscular components of the vertebrae." [MPATH:curation]
+is_a: MPATH:86 ! organ specific developmental defect
+created_by: Paul
+creation_date: 2012-03-25T12:15:53Z
+
+[Term]
+id: MPATH:872
+name: kyphosis
+def: "Abnormality of the kyphotic curvature of the spine." [MPATH:curation]
+is_a: MPATH:871 ! spinal structural defects
+created_by: Paul
+creation_date: 2012-03-25T12:17:10Z
+
+[Term]
+id: MPATH:873
+name: micropthalmia
+def: "Reduced size of the eye globe." [MPATH:curation]
+is_a: MPATH:770 ! abnormal organ size
+created_by: Paul
+creation_date: 2012-03-25T12:21:30Z
 
 [Term]
 id: MPATH:88
