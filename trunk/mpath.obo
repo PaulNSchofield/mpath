@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 04:09:2012 08:24
+date: 04:09:2012 14:29
 saved-by: Paul
 auto-generated-by: OBO-Edit 2.1-beta13
 default-namespace: mouse_pathology.ontology
@@ -6095,7 +6095,7 @@ creation_date: 2012-03-24T03:45:01Z
 [Term]
 id: MPATH:858
 name: capillary hemangioma
-def: "Benign proliferation of capillaries made up of closely packed aggregations of capillaries, usually of normal caliber, separated by scant connective stroma" [MPATH:curation]
+def: "Benign proliferation of capillaries made up of closely packed aggregations of capillaries, usually of normal caliber, separated by scant connective stroma." [MPATH:curation]
 comment: Most common kind of hemangioma thought to be derived from primitive mesenchymal stem cells.
 is_a: MPATH:240 ! hemangioma
 created_by: Paul
@@ -6308,6 +6308,62 @@ def: "Fibrotic reaction to presence of a foreign body." [MPATH:Pathology Committ
 is_a: MPATH:181 ! fibrosis
 created_by: Paul
 creation_date: 2012-09-03T05:44:35Z
+
+[Term]
+id: MPATH:882
+name: hepatic peri-ductal inflammation
+def: "Inflammatory cell infiltrate around bile ducts within the liver." [MPATH:JPS]
+is_a: MPATH:212 ! inflammation
+created_by: Paul
+creation_date: 2012-09-04T11:07:32Z
+
+[Term]
+id: MPATH:883
+name: pneumonitis
+def: "An interstitial, granulomatous, fibrosing inflammation of the lung, especially of the bronchioles and alveoli." [MPATH:JPS]
+is_a: MPATH:212 ! inflammation
+created_by: Paul
+creation_date: 2012-09-04T11:18:21Z
+
+[Term]
+id: MPATH:884
+name: histiocytic pneumonitis
+def: "Pneumonitis involving subpleural histiocytosis." [MPATH:JPS]
+is_a: MPATH:883 ! pneumonitis
+created_by: Paul
+creation_date: 2012-09-04T11:19:22Z
+
+[Term]
+id: MPATH:885
+name: metastatic tumor
+def: "metastatic tumour of unspecified origin" [MPATH:Pathology Committee]
+is_a: MPATH:218 ! neoplasm
+created_by: Paul
+creation_date: 2012-09-04T11:28:57Z
+
+[Term]
+id: MPATH:886
+name: pulmonary metastasis
+def: "Metastatic tumour of unspecified origin in the lung." [MPATH:Pathology Committee]
+is_a: MPATH:885 ! metastatic tumor
+created_by: Paul
+creation_date: 2012-09-04T11:30:02Z
+
+[Term]
+id: MPATH:887
+name: lymphatic metastasis
+def: "Metastatic tumor in the lymphatic vessels or lymph nodes of unspecified origin." [MPATH:Pathology Committee]
+is_a: MPATH:885 ! metastatic tumor
+created_by: Paul
+creation_date: 2012-09-04T11:32:15Z
+
+[Term]
+id: MPATH:888
+name: onychogryphosis
+def: "Hypertrophy of the nail bed resulting in abnormally long, curved and thickened nails." [MPATH:JPS]
+is_a: MPATH:631 ! hypertrophic tissue
+created_by: Paul
+creation_date: 2012-09-04T12:10:49Z
 
 [Term]
 id: MPATH:89
