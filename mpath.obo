@@ -1248,7 +1248,7 @@ is_a: MPATH:249 ! glioma
 [Term]
 id: MPATH:254
 name: complex tumor
-def: "Tumors showing mutiple histological componants/differentiation." [Pathbase: Pathology Committee]
+def: "Tumors showing multiple histological componants/differentiation." [Pathbase: Pathology Committee]
 is_a: MPATH:218 ! neoplasm
 
 [Term]
