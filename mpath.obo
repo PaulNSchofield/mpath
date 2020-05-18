@@ -2840,12 +2840,6 @@ def: "Neoplastic proliferation of intermediate trophoblasts that invades the myo
 is_a: MPATH:454 ! trophoblastic tumor
 
 [Term]
-id: MPATH:458
-name: normal
-def: "Normal." [Pathbase: Pathology Committee]
-is_obsolete: true
-
-[Term]
 id: MPATH:459
 name: obsolete
 def: "obsolete" [Pathbase: Pathology Committee]
@@ -3889,6 +3883,12 @@ is_a: MPATH:515 ! Non-Lymphoid neoplasias
 id: MPATH:596
 name: pathological process
 def: "The organic response of tissues to external insult, injury or underlying genetic or epigenetic lesion." [Pathbase: Pathology Committee]
+is_a: MPATH:0 ! pathological entity
+
+[Term]
+id: MPATH:458
+name: normal
+def: "No pathological entity observable." [Pathbase: Pathology Committee]
 is_a: MPATH:0 ! pathological entity
 
 [Term]
