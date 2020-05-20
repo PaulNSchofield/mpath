@@ -1,12 +1,12 @@
 format-version: 1.2
-date: 2020-05-19
+data-version: 2020-05-19
 saved-by: ORCID: 0000-0002-5111-7263
 ontology: mpath
 auto-generated-by: OBO-Edit 2.3-beta5
 default-namespace: mouse_pathology.ontology
 namespace-id-rule: * MPATH:$sequence(3,0,999)$
 remark: The Pathbase mouse pathology ontology provides a description of experimental mouse pathology phenotypes and incorporates 889 concepts including anatomical pathological entities and pathological processes. These are organised in an almost entirely is_a hierarchy of pathological processes or anatomical entities. Questions, comments and suggestions for amendment should be sent to the Co-ordinator, Dr. Paul Schofield, Dept. of Physiology Development and Neuroscience, University of Cambridge (PNS12@cam.ac.uk).The ontology was developed by the Pathbase consortium (http://www.pathbase.net) funded under the European Commission's Fifth Framework programme, Contract number QLRI-CT-1999-00320.
-data-version: 2020-05-19
+
 
 
 
