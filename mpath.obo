@@ -7,9 +7,6 @@ default-namespace: mouse_pathology.ontology
 namespace-id-rule: * MPATH:$sequence(3,0,999)$
 remark: The Pathbase mouse pathology ontology provides a description of experimental mouse pathology phenotypes and incorporates 889 concepts including anatomical pathological entities and pathological processes. These are organised in an almost entirely is_a hierarchy of pathological processes or anatomical entities. Questions, comments and suggestions for amendment should be sent to the Co-ordinator, Dr. Paul Schofield, Dept. of Physiology Development and Neuroscience, University of Cambridge (PNS12@cam.ac.uk).The ontology was developed by the Pathbase consortium (http://www.pathbase.net) funded under the European Commission's Fifth Framework programme, Contract number QLRI-CT-1999-00320.
 
-
-
-
 [Term]
 id: MPATH:1000
 name: pathological phenotype observation
@@ -2412,7 +2409,7 @@ is_a: MPATH:2 ! cell death
 [Term]
 id: MPATH:40
 name: hyalinosis
-def: "Intracellular deposition of eosinophilic material." [PMID: 11794381]
+def: "Intracellular deposition of eosinophilic material." [PMID:11794381]
 synonym: "Hyaline degeneration, Eosinophilic cytoplasmic change" RELATED [Pathbase: Curation]
 is_a: MPATH:33 ! intracellular and extracellular accumulation
 
@@ -3155,7 +3152,7 @@ is_a: MPATH:342 ! myeloid leukaemia
 [Term]
 id: MPATH:499
 name: nesidioblastosis
-def: "Abnormal proliferation of beta cells of developing islets often leading to marked diffuse or focal beta-cell hyperplasia. Considered to generate a potentially cancerous lesion." [PMCID: 1964945]
+def: "Abnormal proliferation of beta cells of developing islets often leading to marked diffuse or focal beta-cell hyperplasia. Considered to generate a potentially cancerous lesion." [PMC:PMC1964945]
 synonym: "Beta-cell nesidioblastosis" RELATED [Pathbase: Curation]
 synonym: "congenital insulinomas" RELATED [Pathbase: Curation]
 synonym: "diffused or generalised islet cell hyperplasia" RELATED [Pathbase: Curation]
@@ -4813,7 +4810,6 @@ creation_date: 2011-02-20T12:06:38Z
 id: MPATH:713
 name: situs ambiguus totalis
 synonym: "situs inversus with dextrocardia" RELATED []
-xref: XX:<new dbxref>
 is_a: MPATH:720 ! situs inversus
 created_by: George Gkoutos
 creation_date: 2011-02-20T12:07:15Z
@@ -5048,7 +5044,7 @@ creation_date: 2011-10-26T02:38:14Z
 [Term]
 id: MPATH:889
 name: Hirano body
-def: " intracellular aggregates of actin and actin-associated proteins first observed in neurons (nerve cells) by Asao Hirano. PMID: 21978358" [MPATH:PNS]
+def: " intracellular aggregates of actin and actin-associated proteins first observed in neurons (nerve cells) by Asao Hirano. PMID:21978358" [MPATH:PNS]
 is_a: MPATH:45 ! protein deposition
 created_by: Paul
 creation_date: 2020-05-19T02:38:14Z
@@ -5215,7 +5211,6 @@ name: pseudocyesis
 def: "Appearance of clinical and/or subclinical signs and symptoms associated with pregnancy when the animal is not pregnant" [MPATH:Sundberg]
 comment: Virgin females have mammary acini and ducts dilated to various degrees filled with proteinaceous materials suggestive of lactation or involution.
 synonym: "false pregnancy" EXACT []
-xref: XX:<new xref>
 is_a: MPATH:474 ! ectasia
 created_by: Paul
 creation_date: 2011-11-02T04:02:14Z
@@ -5726,7 +5721,7 @@ creation_date: 2012-03-19T04:10:23Z
 [Term]
 id: MPATH:815
 name: macrovesicular lipidosis
-def: "subtype of steatosis with Hepatocytes containing a large well-defined single rounded vacuole within each cell, nucleus and cytoplasm displaced to the periphery," [PMID:    21191096]
+def: "subtype of steatosis with Hepatocytes containing a large well-defined single rounded vacuole within each cell, nucleus and cytoplasm displaced to the periphery," [PMID:21191096]
 synonym: "macrovesicular steatosis" EXACT []
 is_a: MPATH:622 ! steatosis
 created_by: Paul
@@ -5814,7 +5809,7 @@ creation_date: 2012-03-20T11:45:41Z
 [Term]
 id: MPATH:824
 name: myofibroma
-def: "A benign localized neoplasm arising from the subcutaneous tissues and skeletal muscle. It is characterized by the presence of myofibroblastic hyperchromatic spindle cells, hylanized stroma formation, calcification, necrosis, and a multinodular growth pattern." [CUI:C1266121]
+def: "A benign localized neoplasm arising from the subcutaneous tissues and skeletal muscle. It is characterized by the presence of myofibroblastic hyperchromatic spindle cells, hylanized stroma formation, calcification, necrosis, and a multinodular growth pattern." [UMLS:C1266121]
 synonym: "Solitary Myofibromatosis" RELATED []
 is_a: MPATH:407 ! fibroma
 created_by: Paul
@@ -6122,7 +6117,7 @@ creation_date: 2012-03-24T03:46:38Z
 [Term]
 id: MPATH:859
 name: botryomycosis
-def: "Chronic granulomatous bacterial infection that affects the skin, and sometimes the viscera. Usually caused by S. aureus." [ISBN: 0-7216-2921-0.]
+def: "Chronic granulomatous bacterial infection that affects the skin, and sometimes the viscera. Usually caused by S. aureus." [ISBN:0-7216-2921-0]
 is_a: MPATH:627 ! pyogranulomatous inflammation
 created_by: Paul
 creation_date: 2012-03-24T03:52:35Z
@@ -6313,7 +6308,7 @@ is_obsolete: true
 [Term]
 id: MPATH:880
 name: foreign body gingivitis
-def: "inflammation of the tooth gum caused by a foreign body." [MAPTH:<new dbxref>, MPATH:Pathology Committee]
+def: "inflammation of the tooth gum caused by a foreign body." [MPATH:Pathology Committee]
 comment: Generally caused by hair or food debris
 is_a: MPATH:879 ! gingivitis
 created_by: Paul
